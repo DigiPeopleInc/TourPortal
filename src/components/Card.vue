@@ -136,6 +136,8 @@ export default {
 
     &__tags {
         margin-bottom: 10px;
+        max-height: 56px;
+        overflow: hidden;
 
         ul {
             display: flex;
@@ -165,6 +167,8 @@ export default {
         font-size: 30px;
         line-height: 32px;
         letter-spacing: -0.02em;
+        max-height: (32px * 3);
+        overflow: hidden;
     }
 
     &__btn {

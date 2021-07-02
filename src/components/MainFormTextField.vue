@@ -1,5 +1,5 @@
 <template>
-    <div :class="['main-text-field', { filled: value }]">
+    <div :class="['main-text-field', { filled: value }, { 'w-icon': icon }]">
         <label class="main-text-field__label" :for="id">{{ label }}</label>
         <input
             type="text"
@@ -184,6 +184,10 @@ export default {
 
         .filled & {
             padding-top: 23px;
+        }
+
+        .w-icon & {
+            padding-right: 65px;
         }
     }
 }
